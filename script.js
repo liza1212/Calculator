@@ -62,7 +62,7 @@ class Calculator{
     getDisplayNumber(number){
         const stringNumber=number.toString()
         const integerDigits=parseFloat(stringNumber.split('.')[0])
-        const decimalDigits=parseFloat(stringNumber.split('.')[1])
+        const decimalDigits=stringNumber.split('.')[1]
         let integerDisplay
         if(isNaN(integerDigits)){
             integerDisplay=''
@@ -71,7 +71,7 @@ class Calculator{
                 maximumFractionDigits: 0
             })
         }
-        if(decimalDigits!=null) {
+        if(decimalDigits!= null) {
             return `${integerDisplay}.${decimalDigits}`
         }else{
             return integerDisplay

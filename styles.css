@@ -8,6 +8,15 @@ body{
     padding:0;
     margin:0;
     background: linear-gradient(to right, #255045, #b7d4d0);
+    overflow: hidden;
+}
+.nav-bar{
+    height: 30px;
+    background: black;
+    color: white;
+    text-align: center;
+    justify-content: center;
+    padding: 10px;
 }
 
 .calculator-grid{
@@ -16,7 +25,7 @@ body{
     align-content: center;
     min-height: 100vh;
     grid-template-columns: repeat(4, 100px);
-    grid-template-rows:minmax(12px, auto) repeat(5, 100px);
+    grid-template-rows:minmax(120px, auto) repeat(5, 100px);
 }
 
 .calculator-grid > button{
