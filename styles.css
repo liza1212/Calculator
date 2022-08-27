@@ -1,0 +1,28 @@
+*, *::before, *::after{
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: normal;
+}
+
+body{
+    padding:0;
+    margin:0;
+    background: linear-gradient(to right, #255045, #b7d4d0);
+}
+
+.calculator-grid{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows:minmax(12px, auto) repeat(5, 100px);
+}
+
+.calculator-grid > button{
+    cursor: pointer;
+    font-sixe: 2rem;
+    border: 1px solid white;
+    outline: none;
+    background-color: rgba(255,255,255,.75);
+}
